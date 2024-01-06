@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" />
+
+    <title>Verificador de Pin</title>
+
+    <!-- Font Icon -->
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <style>
+    .code-input-container {
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 2rem;
+    }
+
+    .code-inputs-container {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .square-input {
+      /* color:red; */
+      font-size: 18px;
+      width: 2rem;
+      height: 3rem;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin: 0.5rem;
+    }
+    .image-container {
+      width: 85%; /* Defina a largura desejada, pode ser em porcentagem, pixels, etc. */
+      height: auto;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+    }
+    .warning {
+      color: red;
+    }
+    .info {
+      color: #ffb300;
+    }
+    .sucess {
+      color: #1be43c;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form
+          method="POST"
+          id="signup-form"
+          class="signup-form wizard clearfix"
+          enctype="multipart/form-data"
+          role="application"
+        >
+          <div class="steps clearfix"></div>
+          <div class="content clearfix">
+            <h3 id="signup-form-h-1" tabindex="-1" class="title current"></h3>
+            <fieldset
+              id="signup-form-p-1"
+              role="tabpanel"
+              aria-labelledby="signup-form-h-1"
+              class="body current"
+              aria-hidden="false"
+              style=""
+            >
+              <!-- <span class="step-current">
+                <span class="step-current-content">
+                  <span class="step-number"><span>00</span>/04</span>
+                </span>
+              </span> -->
+              <div class="fieldset-flex">
+                <figure class="image-container">
+                  <img id="image" src="src/images/otp.png" />
+                </figure>
+                <div class="fieldset-content">
+                  <label for="your_review" class="form-label">
+                    Verificador de Pin</label
+                  >
+                  <div class="code-input-container">
+                    <p id="output2">
+                      Insira o código de no minimo 4 dígitos,para a sua
+                      verificação:
+                    </p>
+                    <div class="code-inputs-container">
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(1, event)"
+                      />
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(2, event)"
+                      />
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(3, event)"
+                      />
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(4, event)"
+                      />
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(5, event)"
+                      />
+                      <input
+                        type="text"
+                        maxlength="1"
+                        class="square-input"
+                        oninput="onKeyUp(6, event)"
+                      />
+                    </div>
+                    <!-- <p style="color: red " id="output">wwwwwwwwwwwww</p> -->
+                    <p id="output"></p>
+                    <!-- <p style="color: #1be497" id="output">insira um número inteiro</p> -->
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <h3 id="signup-form-h-2" tabindex="-1" class="title"></h3>
+            <fieldset
+              id="signup-form-p-2"
+              role="tabpanel"
+              aria-labelledby="signup-form-h-2"
+              class="body"
+              aria-hidden="true"
+              style="display: none"
+            >
+              <!-- Step 3 content here -->
+            </fieldset>
+          </div>
+          <div class="actions">
+            <ul role="menu" aria-label="Pagination">
+              <li class="" aria-disabled="false"></li>
+              <li
+                aria-hidden="false"
+                aria-disabled="false"
+                class=""
+                style="display: list-item"
+              >
+                <!-- <a href="#next" role="menuitem" onclick="checkValue">Verificar</a> -->
+              </li>
+              <li aria-hidden="true" style="display: none"></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="src/js/app.js" defer></script>
+  </body>
+</html>
