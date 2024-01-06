@@ -14,6 +14,11 @@ Este projecto consiste em um sistema verificador de PIN (Personal Identification
 
 - O usuário terá a oportunidade de fazer múltiplas tentativas.
 
+## Apresentação do sistema
+ a presentaca do sistema pode ser vista no link abaixo:
+
+ -https://www.loom.com/share/44f6291fff3e45e7851e0c6f64a0c836?sid=0cf0149e-bc00-4377-bd66-a82551cab251
+
   
 
 ## Dicas ao Usuário:
