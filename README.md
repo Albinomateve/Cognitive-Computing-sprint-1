@@ -15,25 +15,20 @@ Este projecto consiste em um sistema verificador de PIN (Personal Identification
 - O usuário terá a oportunidade de fazer múltiplas tentativas.
 
 ## Apresentação do sistema
- a presentaca do sistema pode ser vista no link abaixo:
+ A presentaca do sistema pode ser vista no link abaixo:
 
- -https://www.loom.com/share/44f6291fff3e45e7851e0c6f64a0c836?sid=0cf0149e-bc00-4377-bd66-a82551cab251
+ - https://www.loom.com/share/44f6291fff3e45e7851e0c6f64a0c836?sid=0cf0149e-bc00-4377-bd66-a82551cab251
 
   
-
 ## Dicas ao Usuário:
 
 O sistema fornece dicas claras e amigáveis para orientar o usuário durante o processo.
 
-## Processo de desenvolvimento
-
-
 ## Desafios encotrados
 
+- Ao criar a função compareNumbers, eu encontrei dificuldades para definir claramente quando um número é significativamente maior ou menor em comparação com um número base já definido. 
 
+## Processo de desenvolvimento
 
-
-
-
-
+Para simplificar a questão de comparação dos números, pensei em usar um limite, uma espécie de fronteira. Se a diferença entre o número que o usuário inseriu e o número base for maior que esse limite, nós dizemos que o número é muito maior ou muito menor, dependendo da situação. Ao estabelecer esse limite, a função agora consegue identificar quando um número é considerado muito maior ou muito menor, tornando o processo de comparação mais transparente. 
 
